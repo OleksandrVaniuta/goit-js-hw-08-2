@@ -12,7 +12,7 @@ const savedTime = localStorage.getItem('videoplayer-current-time');
 const parsedTime = JSON.parse(savedTime);
 
 player
-  .setCurrentTime(parsedTime)
+  .setCurrentTime(parsedTime.seconds)
   .then(function (seconds) {
     // seconds = the actual time that the player seeked to
   })
